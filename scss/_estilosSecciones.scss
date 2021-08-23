@@ -1,0 +1,86 @@
+ /* Estilo propio de las secciones*/
+ /* Mapa */
+ $headdings:(
+    h1: 4em,
+    h2: 1.5em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.35em,
+);
+ $h1: map-get($headdings, h1);
+ $h2: map-get($headdings, h2);
+ $h3: map-get($headdings, h3);
+ $h4: map-get($headdings, h4);
+ $h5: map-get($headdings, h5);
+ $h6: map-get($headdings, h6);
+
+    /*Cards*/
+    .container-card{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .title-cards{
+        width: 100%;
+        max-width: 1080px;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .card{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+ 
+    
+        transition: all 400ms ease-out;
+        cursor: default;
+    }
+    .card:hover{
+       
+        transform: translateY(-3%);
+    }
+    .card img{
+        width: 100%;
+        height: 210px;
+    }
+    .card .contenido-card{
+        padding: 15px;
+        text-align: center;
+    }
+    .card .contenido-card h3{
+        margin-bottom: 15px;
+      
+    }
+    .card .contenido-card p{
+        line-height: 1.8;
+      
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .card .contenido-card a{
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+       
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px;
+    }
+ 
+  
+    .main-portada-imagen img{
+   
+        width: 100%;
+        height: 245px;
+          
+      }
+      .col-12{
+          padding: 0px;
+      }
