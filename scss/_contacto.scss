@@ -11,6 +11,7 @@ body{
     max-width: 100%;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
     box-shadow: 0 0 20px 1px black;
     position: relative;
@@ -18,7 +19,7 @@ body{
 .formulario_titulo{
     text-align: center;
     margin-top: 0;
-    color: #ffc107c9;
+    color: #ff6e07;
 }
 .formulario_input, .formulario_label, .formulario_submit{
     display: block;
@@ -27,11 +28,12 @@ body{
        
 }
 .formulario_input{
-    padding: 20px;
-    background: rgba(0,0,0,0.1);
-    border:  1px solid black;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.09);
+    border: 1px solid #f9d291;
     margin-bottom: 40px;
 }
+
 .formulario_input:focus{
     outline: 1px solid rgba(0,0,0,0.7);
 }
@@ -54,8 +56,11 @@ body{
     cursor: pointer;
     border: none;
 }
-
-.fijar{
-    margin-top: -135px;
+ button {
+    background-color: #ecbb70;
+    border-color: #dcb456;
+    color: #00000061;
 }
+
+
 

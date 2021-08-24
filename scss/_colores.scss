@@ -16,6 +16,7 @@ $color13: #2fb4cc;
 $color14: #cc832f;
 $color15: #dab988;
 $color16: #f59b23d6;
+$color17: #cc8226;
 
 
 
@@ -107,4 +108,7 @@ header {
     }
     .btn-primary{
         background-color: $color16;
+        border-color: $color17;
     }
+
+  
