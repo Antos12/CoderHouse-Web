@@ -24,9 +24,9 @@ $headdings:(
     width: 100px;
     height: 100px;
 }
+
 .encabezado-logo img{
-    width: 100%;
-    height: 100%;
+   @extend.dimensionescard;
 }
 .encabezado-titulo h1{
      
