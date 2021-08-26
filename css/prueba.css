@@ -68,7 +68,8 @@ footer {
   background-color: #f59b23d6; }
 
 .btn-primary {
-  background-color: #f59b23d6; }
+  background-color: #f59b23d6;
+  border-color: #cc8226; }
 
 /* tipografias */
 /* * {
@@ -159,6 +160,7 @@ body {
   max-width: 100%;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   box-shadow: 0 0 20px 1px black;
   position: relative; }
@@ -166,7 +168,7 @@ body {
 .formulario_titulo {
   text-align: center;
   margin-top: 0;
-  color: #ffc107c9; }
+  color: #ff6e07; }
 
 .formulario_input, .formulario_label, .formulario_submit {
   display: block;
@@ -174,9 +176,9 @@ body {
   font-size: 1.3em; }
 
 .formulario_input {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.09);
+  border: 1px solid #f9d291;
   margin-bottom: 40px; }
 
 .formulario_input:focus {
@@ -200,8 +202,10 @@ body {
   cursor: pointer;
   border: none; }
 
-.fijar {
-  margin-top: -135px; }
+button {
+  background-color: #ecbb70;
+  border-color: #dcb456;
+  color: #00000061; }
 
 /* Estilos comunes entre las secciones y index */
 /* Mapa */
@@ -248,7 +252,11 @@ body {
   display: grid;
   grid-template-rows: 0% 0% 16% 20% 20%;
   grid-template-columns: 100%;
-  grid-template-areas: "titulo" "whatshap" "facebook" "instagram" "parrafo";
+  grid-template-areas: "titulo"
+ "whatshap"
+ "facebook"
+ "instagram"
+ "parrafo";
   grid-row-gap: 32px; }
 
 .redes-titulo {
@@ -348,6 +356,9 @@ body {
   margin-top: 20px;
   text-align: center; }
 
+.title-cards h2 {
+  font-size: 3em; }
+
 .card {
   width: 100%;
   margin: 20px;
@@ -364,11 +375,11 @@ body {
   height: 210px; }
 
 .card .contenido-card {
-  padding: 15px;
   text-align: center; }
 
 .card .contenido-card h3 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-size: 1.15em; }
 
 .card .contenido-card p {
   line-height: 1.8;
