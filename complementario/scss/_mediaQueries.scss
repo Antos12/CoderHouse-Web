@@ -1,0 +1,71 @@
+/* MediaQueries */
+/* Mapa */
+$headdings:(
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.35em,
+);
+ $h1: map-get($headdings, h1);
+ $h2: map-get($headdings, h2);
+ $h3: map-get($headdings, h3);
+ $h4: map-get($headdings, h4);
+ $h5: map-get($headdings, h5);
+ $h6: map-get($headdings, h6);
+
+@media only screen and (max-width:310px){
+    .titulo h1{
+        
+        font-size: $h3;
+      }
+    .menu {
+        margin-left: 0px;
+    }
+        
+    }
+    @media only screen and (max-width:160px){
+        .titulo h1{
+            
+            font-size: $h4;
+          }
+        .menu {
+            margin-left: 0px;
+        }
+        .menu a{
+            
+            font-size: $h5;
+          
+        }
+        .items {
+            width: 4rem;
+        }   
+        .Productos-destacados h3{
+            font-size: $h3;
+           
+        }
+        .Productos-destacados-card-titulo h5{
+            font-size: $h4;
+        }
+        .Productos-destacados-card-parrafo p {
+            color: grey;
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 0;
+        }
+        .titulowh h6{
+            
+           
+            font-size: $h6;
+        }
+        }
+        @media only screen and (min-width:320px) and (max-width:768px){
+            .container-card{
+                flex-wrap: wrap;
+            }
+            .card{
+                margin: 15px;
+            }
+        }

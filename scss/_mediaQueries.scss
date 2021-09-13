@@ -1,0 +1,97 @@
+/* MediaQueries */
+/* Mapa */
+$headdings:(
+    h1: 4em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.75em,
+    h6: 0.35em,
+);
+ $h1: map-get($headdings, h1);
+ $h2: map-get($headdings, h2);
+ $h3: map-get($headdings, h3);
+ $h4: map-get($headdings, h4);
+ $h5: map-get($headdings, h5);
+ $h6: map-get($headdings, h6);
+
+@media only screen and (max-width:360px){
+    .titulo h1{
+        
+        font-size: $h3;
+      }
+    .menu {
+        margin-left: 0px;
+    }
+    .card{
+        width: 16em;
+        height: 39em;
+        padding-right: 2px;
+        
+   
+    }
+        
+    }
+@media only screen and (min-width: 241px)and (max-width:359px){
+    .card{
+        width: 14em;
+        height: 39em;
+        padding-right: 2px;
+        
+   
+    }
+    
+}
+@media only screen and (min-width:160px  ) and (max-width:240px){
+        .titulo h1{
+            
+            font-size: $h4;
+          }
+        .menu {
+            margin-left: 0px;
+        }
+        .menu a{
+            
+            font-size: $h5;
+          
+        }
+        .items {
+            width: 4rem;
+        }   
+        .Productos-destacados h3{
+            font-size: $h3;
+           
+        }
+        .Productos-destacados-card-titulo h5{
+            font-size: $h4;
+        }
+        .Productos-destacados-card-parrafo p {
+            color: grey;
+            margin-top: 10px;
+        }
+       
+        .titulowh h6{
+            
+           
+            font-size: $h6;
+        }
+        .card{
+            width: 10em;
+            height: 39em;
+            
+       
+        }
+        }
+@media only screen and (min-width:749px) and (max-width:899px){
+    .columnas-card{
+        
+        display: flex;
+        flex-direction: column;
+        
+        padding: 0px;
+        
+
+    } 
+
+            
+        }
