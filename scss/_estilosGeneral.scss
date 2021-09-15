@@ -46,128 +46,61 @@ $headdings:(
     font-size: $h2;
   
 }
+.contenido-footer{
+    height: auto;
+}
+.columnas{
+    height: 15vh;
+}
 
+.titulosGrande{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: #f5e2b6;;
+}
+.titulos{
+    font-size: 1.5em;
+    
+    display: flex;
+    justify-content: center;
+    color: #f5e2b6;;
+}
 
+.textoinformativo h5{
+    font-size: 1em;
+    color:#f5e2b6; ;
+    padding-left: 35px;
+}
+.contenido{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+ .imagenes{
+    width: 6vw;
+    height: 9vh;
+ }
+ .imagenes img{
+     width: 100%;
+     height: 100%;
+ }
  
-.pago{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- font-size: 25px;
-          
-      }
-.pago-efectivo h4, .pago-tarjeta h4, .pago-mercadoPago h4{
-          font-size:  $h5;
-      }
-.pago img{
-          width:40px ;
-          height: 40px;
-      }
-.redes{
-        display: grid;
-        grid-template-rows: 0% 0% 16% 20% 20%;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "titulo"
-        "whatshap"
-        "facebook"
-        "instagram"
-        "parrafo";
-    grid-row-gap: 32px;
-    
+p,a{
+        font-size: 1.15em;
+        color: #f5e2b6;;
     }
-    .redes-titulo{
-        grid-area: titulo;
-    }
-    /* each */
-    @each $redes in whatsapp, facebook, instagram {
-        .#{$redes}-icon{
-            grid-template-rows: 100%;
-            grid-template-columns: 16% 5%;
-            grid-template-areas: "imagen titulo"
-                                 ;
-            justify-items:start;
-        }
-        
-    }
-    @each $redes in  facebook, instagram {
-        .#{$redes}-icon{
-            margin-right: 441px;
-        }
-        
-    }
-    .whatsapp-icon{
-        grid-area: whatshap;
-        display: grid;
-        
-    }
-    .redes-whatsapp-imagen{
-        grid-area: imagen;
-        
-    }
-    .redes-whatsapp-imagen img{
-        
-        width: 40px;
-        height: 40px;
-    }
-    .redes-whatsapp-titulo{
-        grid-area: titulo;
-        margin-left: 40px;
-        font-size: $h5;
-    }
-  
-    .facebook-icon{
-        grid-area: facebook;
-        display: grid;
-      
-    }
-    .redes-facebook-imagen{
-        grid-area: imagenf;
-        
-    
-    }
-    .redes-facebook-imagen img{
-        
-        width: 40px;
-        height: 40px;
-    
-    }
-    .redes-facebook-titulo{
-       grid-area: titulof;
-       margin-left: 40px;
-       font-size: $h5;
-    }
-    
-    .instagram-icon{
-        grid-area: instagram;
-        display: grid;
-       
-    }
-    .redes-instagram-imagen{
-        grid-area: imageni;
-       
-    }
-    .redes-instagram-imagen img{
-        grid-area: imageni;
-        width: 40px;
-        height: 40px;
-    }
-    .redes-instagram-titulo{
-        grid-area: tituloi;
-        margin-left: 40px;
-        font-size: $h5;
-    }   
-    .redes-facebook-titulo a, .redes-instagram-titulo a{
-        color: rgb(65, 63, 63);
-    }
-   
-    .justify-content-md-center{
-        margin-top: 15px;
-    }
-    p{
-        font-size: 20px;
-    }
-    a{
-        color: orange;
-    }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(255, 166, 0, 0.664);
+}
+.columnas-Pago{
+    height: 10vh;
+}
+.columnas-Info{
+   height: 10vh;
+}
